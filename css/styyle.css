@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+body {
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2rem;
+  color: #9c98e7;
+}
+
+p {
+  margin: 20px;
+  font-size: 0.8rem;
+  text-indent: 20px;
+}
+li {
+  margin: 40px;
+  font-size: 0.8rem;
+}
+strong {
+  color: #9c98e7;
+}
+
+.saludo {
+  text-align: right;
+  margin: 0px 100px;
+}
