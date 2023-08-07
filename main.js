@@ -22,12 +22,13 @@ const tirada = (cantidad, caras) => {
 do {
   comando = prompt(`\t\t\t\t SIMULADOR DE TIRADAS DE DADOS DE ROL\n
                       \t\t----------------------------------------------------------------------\n
-                      \t\t\t\t INATRUCCIONES\n
+                      \t\t\t\t INSTRUCCIONES\n
                       \t\ Utilice: [numero de dados]d[cantidad caradas de dado] ;
                       \t\ Ejemplo: Para tirar 2 dados de 8 el comando seria "2d8";
-                      \t\ Para salir escria el comando salir"`);
+                      \t\ Para salir escriba el comando salir"`);
 
   const expresionRegunar = /^(\d+)d(\d+)$/; // Expresión regular para analizar la notación de los dados
+  comando = comando.toLowerCase();
   const notacionCorrecta = comando.match(expresionRegunar);
   if (notacionCorrecta) {
     const vectorComando = comando.split("d");
